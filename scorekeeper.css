@@ -1,0 +1,44 @@
+.winner {
+    color: green;
+}
+#p1Display, #p2Display {
+    font-size: 10rem;
+}
+.heading {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+p {
+    font-size: 2rem;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.card {
+    -webkit-box-shadow: 1px 7px 26px 5px rgba(0,0,0,0.3); 
+box-shadow: 1px 7px 26px 5px rgba(0,0,0,0.3);
+
+}
+
+#vs {
+    font-size: 3rem;
+}
+#p1wins, #p2wins {
+    font-size: 2rem;
+    color: blue;
+}
+body {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    
+}
+#winScore {
+    font-size: 3rem;
+    border-bottom: 2px red solid;
+}
+

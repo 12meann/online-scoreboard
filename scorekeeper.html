@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="scorekeeper.css">
+    <title>scorekeeper</title>
+</head>
+<body>
+    <!-- title -->
+    <div class="container heading text-center">
+        <h1>Online Scoreboard</h1>
+        
+        <a href="#" id="customize" class="text-center">Customize</a>
+    </div>
+    
+    
+    
+    <!-- cutomization -->
+    <div class="container hide" id="forms">  
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="input-group">
+                    <input type="number" class="form-control" placeholder="Winning Score" aria-label="winning score">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="input-group">
+                    <input type="text" id="p1Name" class="form-control" placeholder="Player 1 Name" aria-label="Player 1 Name">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">
+                <div class="input-group">
+                    <input type="text" id="p2Name" class="form-control" placeholder="Player 2 Name" aria-label="Player 2 Name">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 mb-4">              
+               <!-- Example single danger button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Themes
+                    </button>
+                    <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item" href="#" onclick="changeBg1()">Sports</a>
+                        <a class="dropdown-item" href="#" onclick="changeBg2()">Board Games</a>
+                        <a class="dropdown-item" href="#" onclick="changeBg3()">Arcade</a>
+                        <a class="dropdown-item" href="#" onclick="changeBg4()">Combat</a>                        
+                        <a class="dropdown-item" href="#" onclick="changeBg5()">City Lights</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end customiztion -->
+
+    <!-- Scoreboard -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-4 col-12 card mb-3 mt-2 border-info">
+                <h2 class="card-body py-6 mr-2" id="p1Display">0</h2>   
+                <button class="btn btn-success btn-block mb-3" id="p1">Player 1</button>
+            </div>        
+            <div class="col-md-4 col-sm-4 my-auto col-12 my-2 ">
+                    <h2 id="vs">VS</h2>
+                    <div>
+                        <p id="p1wins" class="hide">Player 1 Wins!</p>
+                        <p id="p2wins" class="hide">Player 2 Wins!</p>
+                    </div>
+                    <button class="btn btn-danger btn-sm mt-5" id="reset">Reset</button>
+            </div>   
+            <div class="col-md-4 col-sm-4 col-12 card mb-4 mt-2 border-info">
+                <h2 class="card-body py-6 ml-2" id="p2Display">0</h2>   
+                <button class="btn btn-success btn-block mb-3" id="p2">Player 2</button>
+            </div>
+        </div>
+    </div>
+    <!-- End scoreboard -->
+    <!-- race to -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p id="race">Race to <span id="winScore">5</span></p>
+            </div>
+    </div>
+        <!-- end race 2 -->
+    </div>
+    
+    
+
+    
+
+    
+    
+    
+
+    <script src="scorekeeper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
