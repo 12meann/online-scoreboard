@@ -1,4 +1,4 @@
-# online-scorekeeper
+# online-scoreboard
 One of the many projects from webdevbootcamp course
 
 It is a simple scoreboard that will keep track of 2 player's scores.
