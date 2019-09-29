@@ -1,44 +1,52 @@
 .winner {
-    color: green;
+  color: green;
 }
-#p1Display, #p2Display {
-    font-size: 10rem;
+#p1Display,
+#p2Display {
+  font-size: 10rem;
 }
 .heading {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 p {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-.hide{
-    display:none;
+.hide {
+  display: none;
 }
-.show{
-    display:block;
+.show {
+  display: block;
 }
 .card {
-    -webkit-box-shadow: 1px 7px 26px 5px rgba(0,0,0,0.3); 
-box-shadow: 1px 7px 26px 5px rgba(0,0,0,0.3);
-
+  -webkit-box-shadow: 1px 7px 26px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 7px 26px 5px rgba(0, 0, 0, 0.3);
+}
+.card-body {
+  padding: 0;
 }
 
 #vs {
-    font-size: 3rem;
+  font-size: 3rem;
 }
-#p1wins, #p2wins {
-    font-size: 2rem;
-    color: blue;
+#p1wins,
+#p2wins {
+  font-size: 2rem;
+  color: blue;
 }
 body {
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;   
-    
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #winScore {
-    font-size: 3rem;
-    border-bottom: 2px red solid;
+  font-size: 3rem;
+  border-bottom: 2px red solid;
 }
 
+@media screen and (max-width: 850px) {
+  #p1Display,
+  #p2Display {
+    font-size: 6rem;
+  }
+}
