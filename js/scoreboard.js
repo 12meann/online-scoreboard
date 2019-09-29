@@ -108,32 +108,22 @@ function changeStyle() {
 }
 
 function changeBg1() {
-  body.style.backgroundImage = "url('https://i.imgur.com/wqidQwn.jpg')";
+  body.style.backgroundImage = "url('../images/sports.jpg')";
   changeStyle();
 }
 function changeBg2() {
-  body.style.backgroundImage = "url('https://i.imgur.com/dHnaWSY.jpg')";
+  body.style.backgroundImage = "url('../images/board.jpg')";
   changeStyle();
 }
 function changeBg3() {
-  body.style.backgroundImage = "url('https://i.imgur.com/qIVTvRG.jpg')";
+  body.style.backgroundImage = "url('../images/game.jpg')";
   changeStyle();
 }
 function changeBg4() {
-  body.style.backgroundImage = "url('https://i.imgur.com/kcDySO8.jpg')";
+  body.style.backgroundImage = "url('../images/boxing.jpg')";
   changeStyle();
 }
 function changeBg5() {
-  body.style.backgroundImage = "url('https://i.imgur.com/P7BkwIq.jpg')";
+  body.style.backgroundImage = "url('../images/city.jpg')";
   changeStyle();
 }
-
-// $('#theme').on('change', function() {
-//   value = $(this).val() - 1;
-//   $('body').css({
-//     'background-image': 'url(' + bgArray[value] + ')'
-//   });
-// });
-
-// instructions at the bottom
-// footer
